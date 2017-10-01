@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>BrowserCam</title>
+    
+</head>
+<body>
+    <script src="js/index.js"></script>
+    <script src="js/screen.js"></script>
+    <script src="js/filter.js"></script>
+    <canvas id="imageCanvas" width="350" height="500"></canvas>
+    <button id="btn-snapshot"> <i class="material-icons"> camera_enhance </i></button>
+    <button id="btn-fullscreen"> <i class="material-icons"> open_with </i> </button>
+    <button id="btn-settings"> <i class="material-icons"> settings </i> </button>
+    <div id="modal-settings" class="modal" >
+        <div id="modal-main-settings"class="menu-settings">
+            <button id="btn-filter" class="btn-settings"> <i class="material-icons">photo_filter</i>Filter</button>
+            <button id="btn-aspect" class="btn-settings"> <i class="material-icons">aspect_ratio</i>Aspect</button>
+            <button id="btn-opacity" class="btn-settings"> <i class="material-icons">opacity</i>Opacity</button>
+            <button id="btn-texture" class="btn-settings"> <i class="material-icons">texture</i>Texture</button>
+            <button id="btn-share." class="btn-settings"> <i class="material-icons">share</i>Share</button>
+            <button id="btn-info" class="btn-settings"> <i class="material-icons">info_outline</i>Information</button>
+        </div>
+        <div id="modal-filter-settings"class="menu-settings">
+            <button id="btn-filter-none" class="btn-settings"> <i class="material-icons">filter_none</i>None</button>
+            <button id="btn-filter-silh" class="btn-settings"> <i class="material-icons">blur_on</i>Silh</button>
+            <button id="btn-filter-bw" class="btn-settings"> <i class="material-icons">filter_b_and_w</i>Gray Scale</button>  
+            <button id="btn-filter-neg" class="btn-settings"> <i class="material-icons">filter_frames</i>Negative</button>
+            <button id="btn-filter-test" class="btn-settings"> <i class="material-icons">code</i>Test</button>
+        </div>       
+    </div>
+    <p id="inf">Ready</p>
+</body>
+</html>
