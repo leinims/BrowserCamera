@@ -1,2 +1,2 @@
 # BrowserCamera
-Browser Camera with Filters
+Browser Camera with Filters (Supported Only Firefox Gecko)
