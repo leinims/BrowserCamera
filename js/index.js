@@ -52,7 +52,8 @@ document.addEventListener ('DOMContentLoaded', () => {
                                                         height: {min: 720, ideal: 720, max: 1080 } ,
                                                         facingMode: (front? "user" : "environment") } };
             navigator.mediaDevices.getUserMedia ( constraints).then ( (stream) => {
-                video.src = URL.createObjectURL (stream);
+                //video.src = window.URL.createObjectURL (stream);
+                video.srcObject = stream;
                 video.play ();
             });
         } else {
